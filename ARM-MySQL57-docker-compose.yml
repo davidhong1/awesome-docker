@@ -7,8 +7,7 @@ services:
     restart: always
     ports:
       - 3306:3306
-    volumes:
-      # need mkdir -p ~/docker/data/var/lib/mysql, pls read README.md
-      - ~/docker/data/var/lib/mysql:/var/lib/mysql
+    # volumes:
+    # - ~/docker/data/var/lib/mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root123456

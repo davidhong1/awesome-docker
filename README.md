@@ -1,6 +1,6 @@
 # run mysql
 ```shell
-mkdir -p ~/docker/data/var/lib/mysql
+# mkdir -p ~/docker/data/var/lib/mysql
 docker-compose -f ARM-MySQL57-docker-compose.yml up -d
 docker exec -it awesome-docker-mysql57-1 mysql -uroot -p
 
@@ -15,5 +15,5 @@ FLUSH PRIVILEGES;
 # remove mysql
 ```shell
 docker-compose -f ARM-MySQL57-docker-compose.yml down
-rm -rf ~/docker/data/var/lib/mysql
+# rm -rf ~/docker/data/var/lib/mysql
 ```
