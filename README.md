@@ -17,3 +17,25 @@ FLUSH PRIVILEGES;
 docker-compose -f ARM-MySQL57-docker-compose.yml down
 # rm -rf ~/docker/data/var/lib/mysql
 ```
+
+# run redis
+```shell
+# mkdir -p ~/docker/data/var/lib/mysql
+docker-compose -f Redis-docker-compose.yml up -d
+```
+
+# remove redis
+```shell
+docker-compose -f Redis-docker-compose.yml down
+```
+
+# run MongoDB
+```shell
+# mkdir -p ~/docker/data/var/lib/mysql
+docker-compose -f MongoDB-docker-compose.yml up -d
+```
+
+# remove MongoDB
+```shell
+docker-compose -f MongoDB-docker-compose.yml down
+```
